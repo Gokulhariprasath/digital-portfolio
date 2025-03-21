@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>.body{
+        color: aqua;
+        
+    }
+    
+    
+    
+    .header{
+        background-color: black;
+        color: yellow;
+    }
+    .sub1{
+        padding: 30px;
+        text-align: center;
+        
+    
+    }
+    
+    .head{
+        text-align: center;
+        padding: 20px;
+    }
+    .sub2{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .bt{
+        color: black;
+        background-color: yellow;
+        align-items: center;
+    }
+    #result{
+        text-align: center;
+    }</style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="head">cm to inches</h2>
+        <div class="sub1">
+            <input type="text" id="input" placeholder="enter the text">
+        </div>
+        <div class="sub2">
+            <button class="bt" onclick="convert()" type="submit">convert into inches</button>
+            
+        </div>
+        <div id="result">
+
+        </div>
+        
+    </div>
+   <script>
+    
+
+    function convert()
+    {
+        let a =Number(document.getElementById("input").value)
+    let ans = a/2.54
+    let result = document.getElementById("result")
+    result.innerHTML = ans
+
+    }
+
+   </script>
+
+</body>
+</html>
